@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package api.log;
+
+message Record {
+  bytes value = 1;
+  uint64 offset = 2;
+  uint64 term = 3;
+  uint32 type = 4;
+}
